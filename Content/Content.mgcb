@@ -10,8 +10,8 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:XNAnimation.dll
-/reference:XNAnimationPipeline.dll
+/reference:../../XNAnimationPipeline/bin/Debug/net6.0/XNAnimation.dll
+/reference:../../XNAnimationPipeline/bin/Debug/net6.0/XNAnimationPipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -19,7 +19,7 @@
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
+/processorParam:TextureFormat=NoChange
 /build:Fonts/Arial.spritefont
 
 #begin Models/test_stickman.png
@@ -31,7 +31,7 @@
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
+/processorParam:TextureFormat=NoChange
 /build:Models/test_stickman.png
 
 #begin Models/test_stickmanM.fbx
