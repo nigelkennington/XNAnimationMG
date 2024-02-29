@@ -3,7 +3,6 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
     <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.1.303">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
