@@ -10,8 +10,8 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:../../XNAnimationPipeline/bin/Debug/net6.0/XNAnimation.dll
-/reference:../../XNAnimationPipeline/bin/Debug/net6.0/XNAnimationPipeline.dll
+/reference:../XNAnimationPipeline/bin/Debug/net6.0/XNAnimation.dll
+/reference:../XNAnimationPipeline/bin/Debug/net6.0/XNAnimationPipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -19,27 +19,16 @@
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=NoChange
+/processorParam:TextureFormat=Color
 /build:Fonts/Arial.spritefont
 
-#begin Models/test_stickman.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=NoChange
-/build:Models/test_stickman.png
-
-#begin Models/test_stickmanM.fbx
+#begin Models/character-soldier.fbx
 /importer:FbxImporter
 /processor:SkinnedModelProcessor
 /processorParam:BakeMeshTransforms=True
 /processorParam:GenerateTangentFrame=False
 /processorParam:ModelRotate=0, 0, 0
 /processorParam:ModelScale=1
-/build:Models/test_stickmanM.fbx
+/processorParam:TextureFormat=Color
+/build:Models/character-soldier.fbx
 

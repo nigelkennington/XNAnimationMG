@@ -72,6 +72,8 @@ namespace XNAnimationSample
             stringBuilder = new StringBuilder();
 
             base.Initialize();
+
+            Window.Title = "Kenney.nl";
         }
 
         /// <summary>
@@ -84,7 +86,7 @@ namespace XNAnimationSample
             spriteFont = Content.Load<SpriteFont>("Fonts\\Arial");
 
             // Load the skinned model
-            skinnedModel = Content.Load<SkinnedModel>("Models\\test_stickmanM");
+            skinnedModel = Content.Load<SkinnedModel>("Models\\character-soldier");
 
 
             foreach (ModelMesh mesh in skinnedModel.Model.Meshes)
@@ -121,7 +123,7 @@ namespace XNAnimationSample
 
             //animationController.StartClip(skinnedModel.AnimationClips["Take 001"]);
 
-            activeAnimationClip = 2; // "UkkoArmature|Idle"
+            activeAnimationClip = 1; // "UkkoArmature|Idle"
             animationController.StartClip(skinnedModel.AnimationClips.Values[activeAnimationClip]);
 
             // Set up the camera.
@@ -307,10 +309,10 @@ namespace XNAnimationSample
 
             stringBuilder.AppendLine();
 
-            stringBuilder.AppendLine("\nThe type of interpolation controls how the animation");
-            stringBuilder.AppendLine("controller blends between two keyframes and also how");
-            stringBuilder.AppendLine("the controller fades between two animations. The effects");
-            stringBuilder.AppendLine("of the different interpolator types can be seen at slow speeds");
+            // stringBuilder.AppendLine("\nThe type of interpolation controls how the animation");
+            // stringBuilder.AppendLine("controller blends between two keyframes and also how");
+            // stringBuilder.AppendLine("the controller fades between two animations. The effects");
+            // stringBuilder.AppendLine("of the different interpolator types can be seen at slow speeds");
 
             spriteBatch.DrawString(spriteFont, stringBuilder.ToString(), new Vector2(30, 30), Color.White);
 
